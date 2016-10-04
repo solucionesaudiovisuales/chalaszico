@@ -1,0 +1,27 @@
+//utilities/_helpers.scss
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+// .ng-invalid.ng-dirty{
+//   border-color: $pink-red !important;
+// }
+// .ng-valid.ng-dirty {
+//   border-color: $red !important;
+// }
+
+.appear {
+  @include transition(all linear 0.5s);
+  &.ng-hide {
+    opacity:0;
+  }
+}
+
+.appear-left {
+  @include transition(all linear 0.5s);
+  &.ng-hide {
+    left:0;
+  }
+}
