@@ -1,7 +1,7 @@
 'use strict';
-var webpack = require('webpack');
-var path = require("path");
-var APP = __dirname + '/app';
+let webpack = require('webpack');
+let path = require("path");
+let APP = __dirname + '/app';
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // multiple extract instances

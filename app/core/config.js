@@ -1,2 +1,3 @@
-export default angular.module('chalasZico.config', [])
-    .config(require('./config/routes'));
+export default ngModule => {
+  require('./config/routes')(ngModule);
+};

@@ -1,0 +1,25 @@
+//_chalas.scss
+
+
+.rotate-chala {
+	width: 120px;
+	height: 120px;
+	padding: 30px;
+	position: fixed;
+	left: 80%;
+	margin-left: -50px;
+	top: 200px;
+	border-radius: 100px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#chala1{
+	background-image: url('../images/chalaDerecha.png');
+}
+
+#chala2{
+	background-image: url('../images/chalaIzquierda.png');
+	margin-left: 35px;
+}

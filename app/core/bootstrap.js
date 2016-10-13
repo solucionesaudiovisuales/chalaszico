@@ -1,19 +1,19 @@
 require('./vendor')();
 
-angular.module('chalasZico', [
+const ngModules = [
+  'ngSanitize',
   'ui.router',
+  'firebase',
   'angulartics',
   'angulartics.google.analytics',
-  require('./config').name,
-  require('./controllers').name,
-  require('./directives').name,
-  require('./services').name,
-])
+];
 
-.constant('SETTINGS', {
-  development: (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") ? true : false,
-})
-;
+const ngModule = angular.module('chalasZico', ngModules);
+
+require('./config')(ngModule);
+require('./services')(ngModule);
+require('./directives')(ngModule);
+require('./controllers')(ngModule);
 
 angular.element(document).ready(() => {
   angular.bootstrap(document, ['chalasZico'], {});

@@ -1,0 +1,36 @@
+//components/_background.scss
+// ******* ******* ******* ******* 
+// Special background Component
+
+.random-bg{
+	&.bg-1{
+		background-image: url('../images/backgrounds/giphy(1).gif');
+	}
+	&.bg-2{
+		background-image: url('../images/backgrounds/giphy(2).gif');
+	}
+	&.bg-3{
+		background-image: url('../images/backgrounds/giphy(3).gif');
+	}
+	&.bg-4{
+		background-image: url('../images/backgrounds/giphy(4).gif');
+	}
+	&.bg-5{
+		background-image: url('../images/backgrounds/giphy(5).gif');
+	}
+	&.bg-6{
+		background-image: url('../images/backgrounds/giphy(6).gif');
+	}
+	&.bg-7{
+		background-image: url('../images/backgrounds/giphy(7).gif');
+	}
+	&.bg-8{
+		background-image: url('../images/backgrounds/giphy(8).gif');
+	}
+	&.bg-9{
+		background-image: url('../images/backgrounds/giphy(9).gif');
+	}
+	&.bg-10{
+		background-image: url('../images/backgrounds/giphy(10).gif');
+	}
+}

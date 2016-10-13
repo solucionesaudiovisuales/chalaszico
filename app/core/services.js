@@ -1,2 +1,3 @@
-export default angular.module('chalasZico.services', [])
-    .service('apiService', require('./services/api'));
+export default ngModule => {
+  require('./services/post.service')(ngModule);
+};

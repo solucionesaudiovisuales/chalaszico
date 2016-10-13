@@ -1,2 +1,5 @@
-export default angular.module('chalasZico.directives', [])
-    .directive('customValidation', require('./directives/customValidation'));
+export default ngModule => {
+  require('./components/chalas/chalas')(ngModule);
+  require('./components/posts/posts')(ngModule);
+  require('./components/home/background')(ngModule);
+};
