@@ -1,9 +1,13 @@
 .posts-container
-	.post(ng-repeat="p in vm.posts")
-		.post-header
-			p.rainbow {{p.provider_name}}
-		.post-content
-			.post-img(ng-hide="p.html")
-				img(ng-src="{{p.image_url}}")
-			.post-html(ng-show="p.html")
-				div(ng-bind-html="p.sanitized_html")
+  .post(ng-repeat="p in vm.posts")
+    .post-header
+      p
+        span.rainbow {{p.provider_name}}
+    .post-content
+      .post-img(ng-hide="p.html")
+        img(ng-src="{{p.image_url}}")
+      .post-html(ng-show="p.html")
+        div(ng-bind-html="p.sanitized_html")
+    .post-footer
+      .likeme
+        i.fa.fa-book
