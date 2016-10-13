@@ -1,7 +1,7 @@
 .posts-container
 	.post(ng-repeat="p in vm.posts")
 		.post-header
-			p {{p.provider_name}}
+			p.rainbow {{p.provider_name}}
 		.post-content
 			.post-img(ng-hide="p.html")
 				img(ng-src="{{p.image_url}}")
