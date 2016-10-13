@@ -1,34 +1,37 @@
 //_post.scss
 
 .post{
-  height: 500px;
   width: 500px;
+  height: 500px;
   margin: 100px;
 }
 .post-header{
-	background-color: $white;
-	height: 50px;
-	padding: 5px;
+  font-weight: bolder;
+  height: 50px;
+  padding: 5px;
 }
-.post-content{
-	background-color: $white;
-
+.post-footer{
+  height: 40px;
+  padding: 5px;
+}
+.post-header, .post-content, .post-footer{
+  background-color: rgba($almost-black,.92);
 }
 .post-img{
-	padding: 5px;
-	img{
-		width: 100%;
-		height: auto;
-	}
+  padding: 5px;
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .post-html{
-	width: 90%;
-    margin: auto;
-    display: block;
-    padding: 5px;
-    iframe{
-    	width: 100%;
-    	height: 100%;
-    }
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
 }

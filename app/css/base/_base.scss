@@ -5,7 +5,8 @@
 body{
 	text-align: center;
 	min-height: 1000px;
-  	font: 17px 'Helvetica', sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
+  	font-size: 17px;
   	background-image: url('../images/plpbg.png');
   	background-size: contain;
   	background-color: $almost-black;
