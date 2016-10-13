@@ -5,18 +5,26 @@
   height: 500px;
   margin: 100px;
 }
+
 .post-header{
   font-weight: bolder;
   height: 50px;
   padding: 5px;
 }
+
+.post-content{
+	max-height: 450px;
+}
+
 .post-footer{
   height: 40px;
   padding: 5px;
 }
+
 .post-header, .post-content, .post-footer{
   background-color: rgba($almost-black,.92);
 }
+
 .post-img{
   padding: 5px;
   img{
@@ -31,7 +39,8 @@
   margin: auto;
   padding: 5px;
   iframe{
-    width: 100%;
+    width: 100% !important;
     height: 100%;
+    max-width: 447px !important;
   }
 }
