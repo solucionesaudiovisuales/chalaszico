@@ -13,15 +13,22 @@
 }
 
 .post-content{
-	max-height: 450px;
+  max-height: 450px;
+  overflow: hidden;
 }
 
 .post-footer{
   height: 40px;
   padding: 5px;
+  a{
+    margin: 5px;
+    cursor: pointer;
+  }
 }
 
-.post-header, .post-content, .post-footer{
+.post-header,
+.post-content,
+.post-footer{
   background-color: rgba($almost-black,.92);
 }
 
@@ -40,7 +47,7 @@
   padding: 5px;
   iframe{
     width: 100% !important;
-    height: 100%;
     max-width: 447px !important;
+    height: 100%;
   }
 }

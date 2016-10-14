@@ -4,10 +4,15 @@
       p
         span.rainbow {{p.provider_name}}
     .post-content
+      .chalas
+        .chala
       .post-img(ng-hide="p.html")
         img(ng-src="{{p.image_url}}")
       .post-html(ng-show="p.html")
         div(ng-bind-html="p.sanitized_html")
     .post-footer
       .likeme
-        i.fa.fa-book
+        a(ng-click='p.like()')
+          img(src='images/chalano.svg', alt='noguzta')
+        a(ng-click='p.dislike()')
+          img(src='images/chalazi.svg', alt='meguzta')
