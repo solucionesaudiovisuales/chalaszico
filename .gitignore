@@ -3,4 +3,5 @@ build
 bower_components
 node_modules
 database.rules.json
+firebase-debug.log
 firebase.json
