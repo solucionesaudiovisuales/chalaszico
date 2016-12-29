@@ -42,6 +42,22 @@ module.exports = {
             {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
                 loader: 'file'
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
+            },
+            {
+                test: /\.(svg|woff|woff2|ttf|eot)$/,
+                loader: 'file'
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader?limit=10000&minetype=application/font-woff'
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
             }
             // ,
             // {

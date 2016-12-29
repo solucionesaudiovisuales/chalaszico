@@ -26,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: extractSASS.extract(['css','sass'])
+                loader: extractSASS.extract(['css', 'sass'])
             },
             {
                 test: /\.css$/,
@@ -38,12 +38,24 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(woff|woff2|ttf|eot|otf)$/,
+                test: /.*\.(gif|png|jpe?g|svg)$/i,
                 loader: 'file'
             },
             {
-                test: /.*\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
+            },
+            {
+                test: /\.(svg|woff|woff2|ttf|eot)$/,
                 loader: 'file'
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader?limit=10000&minetype=application/font-woff'
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
             }
         ]
     },

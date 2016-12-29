@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="37px" viewBox="0 0 21 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.0075474,28.3528029 C5.0075474,24.4229461 6.33998014,23.5434229 6.32141827,18.6884118 C6.3028564,13.8334006 4.00860955,10.5550654 5.0075474,7.74943906 C6.00648525,4.94381275 8.0300382,3.82948196 10.1027801,3.82948196 C12.4196106,3.82948196 16.4691194,5.74374078 16.3355459,11.1338863 C16.2119125,16.1229163 15.5516164,22.1218932 14.9740329,25.9728621 C14.3964495,29.8238309 13.5559062,33.829482 10.5472489,33.829482 C8.00969233,33.829482 5.0075474,32.2826596 5.0075474,28.3528029 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="17.583041" height="36">
+            <rect x="1.75572839" y="0.829481956" width="17.583041" height="36" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path" transform="translate(10.547249, 18.829482) rotate(11.000000) translate(-10.547249, -18.829482) ">
+            <use fill="#262626" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use stroke="#00FF00" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -10,4 +10,7 @@
         div(ng-bind-html="vm.sanitize(p.html)")
     .post-footer
       .likeme
-        i.fa.fa-book
+        a(ng-click='p.like()')
+          img(src='../../images/chalano.svg', alt='noguzta')
+        a(ng-click='p.dislike()')
+          img(src='../../images/chalazi.svg', alt='meguzta')

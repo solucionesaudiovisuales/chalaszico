@@ -3,7 +3,6 @@
 
 module.exports = () => {
   /* Styles */
-  // require('bootstrap/dist/css/bootstrap.css');
   require('../css/main.scss');
   /* JS */
   global.$ = global.jQuery = require('jquery');

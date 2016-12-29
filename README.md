@@ -11,8 +11,7 @@
 
 ```npm start```
 
-
-### Deploy
+### Deploy a Firebase
 
 ```npm run build```
 ```firebase deploy```

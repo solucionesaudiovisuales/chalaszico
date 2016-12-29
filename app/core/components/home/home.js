@@ -1,6 +1,5 @@
 export default ngModule => {
-  ngModule.controller('HomeCtrl', function HomeCtrl($log) {
-    $log.log("Hi!");
+  ngModule.controller('HomeCtrl', function HomeCtrl() {
 
   });
 };
