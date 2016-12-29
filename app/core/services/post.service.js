@@ -19,9 +19,8 @@ export default ngModule => {
     const ref = firebase.database().ref();
     
     return {
-      getPost: (page=1) => {
-        let posts = $firebaseArray(ref.child("posts"));
-        return posts.$loaded();
+      getPosts: (page=1) => {
+        return $firebaseArray(ref.child("posts").orderByChild('createdAt'));
       }
     };
   });

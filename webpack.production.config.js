@@ -11,7 +11,7 @@ let extractSASS = new ExtractTextPlugin('app.css');
 
 module.exports = {
     context: APP,
-    entry: './core/bootstrap.js',
+    entry: './core/app.js',
     output: {
         path: __dirname + '/build',
         filename: 'bundle.js'

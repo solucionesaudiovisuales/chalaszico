@@ -1,9 +1,19 @@
 //_post.scss
 
+.posts-container{
+   margin-top: 200px;
+}
+
+
 .post{
   width: 500px;
   height: 500px;
-  margin: 100px;
+  margin: auto;
+  display: block;
+  @media(max-width: $iphone6-plus){
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .post-header{
@@ -42,5 +52,11 @@
     width: 100% !important;
     height: 100%;
     max-width: 447px !important;
+  }
+  img{
+    max-width: 440px;
+    @media(max-width: $iphone6-plus){
+      width: 260px;
+    }
   }
 }

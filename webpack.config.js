@@ -11,7 +11,7 @@ let extractSASS = new ExtractTextPlugin('app.css');
 module.exports = {
     context: APP,
     entry: {
-        app: ['webpack/hot/dev-server', './core/bootstrap.js']
+        app: ['webpack/hot/dev-server', './core/app.js']
     },
     output: {
         path: APP,
