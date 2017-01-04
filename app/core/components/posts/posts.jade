@@ -1,4 +1,5 @@
 .posts-container
+  p(ng-if="vm.loading") CARGANDO
   .post(ng-repeat="p in vm.posts | orderBy: '-createdAt'")
     .post-header
       p

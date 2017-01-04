@@ -20,7 +20,7 @@ export default ngModule => {
     
     return {
       getPosts: (page=1) => {
-        return $firebaseArray(ref.child("posts").orderByChild('createdAt'));
+        return $firebaseArray(ref.child("posts").orderByChild('createdAt').limitToLast( page * 10 ));
       }
     };
   });
